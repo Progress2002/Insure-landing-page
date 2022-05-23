@@ -1,0 +1,502 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+body{
+    margin: 0;
+    font-family: "Karla";
+    background-color: #FFF;
+}
+
+hr{
+    display: inline-block;
+    margin-top: 0;
+    width: 150px;
+}
+
+h1{
+    font-size: 60PX;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+.button{
+    padding: 9px 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    background-color: inherit;
+    color: inherit;
+    font-size: 12px;
+    border: 2px solid hsl(0, 23%, 94%);
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(270, 9%, 17%);
+    cursor: pointer;
+}
+
+/* ---------HEADER SECTION---------- */
+
+header{
+    margin: 20px;
+    padding: 0 111px;
+    display: flex;
+    justify-content: space-between;
+    color:  hsl(273, 4%, 51%);
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+
+}
+
+.logo img{
+    margin: 10px 0 0 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+nav .hamburger{
+    display: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+nav a{
+    text-decoration: none;
+    color:  hsl(273, 4%, 51%);
+
+}
+
+nav a:hover{
+    color: hsl(256, 26%, 20%);
+}
+
+nav button{
+    padding: 9px 20px;
+    letter-spacing: 2px;
+    background-color: #fff;
+    color:  hsl(256, 26%, 20%);
+    font-size: 12px;
+    border: 3px solid  hsl(273, 4%, 51%);
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+}
+
+nav button:hover{
+    background-color:  hsl(256, 26%, 20%);
+    color: #fff;
+    cursor: pointer;
+    border-color: hsl(256, 26%, 20%);
+}
+
+/* -----------INTRO SECTION------------- */
+
+.intro{
+    color: #fff;
+    background-color:  hsl(256, 26%, 20%);
+    display: inline-block;
+    width: 100%;
+
+}
+
+.intro .content{
+    display: flex;
+    margin:  80px 155px  100px;
+}
+
+.intro .mobile-bg{
+    display: none;
+}
+
+.intro .bg{
+    position: absolute;
+    z-index: 1;
+}
+
+.intro .right{
+    width: 360px;
+    right: 0;
+    top: 81px;
+}
+
+.intro .left{
+    width: 170px;
+    left: 0;
+    top: 480px;
+}
+
+.intro .item{
+    width: 47%;
+}
+
+.intro h1{
+    padding-right: 70px;
+    margin: 80px  0 0;
+    line-height: 1;
+}
+
+.intro p{
+    color:  hsl(273, 4%, 51%);
+
+}
+
+.intro p{
+    line-height: 1.5;
+    font-size: 15px;
+    color:hsl(0, 23%, 94%);
+}
+
+.intro button{
+    padding: 9px 20px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    background-color: inherit;
+    color: inherit;
+    font-size: 12px;
+    border: 2px solid hsl(0, 23%, 94%);
+}
+
+.intro button:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(270, 9%, 17%);
+    cursor: pointer;
+}
+
+.intro .image{
+    position: absolute;
+    right: 0;
+    height: 74%;
+
+}
+
+.intro .image .mobile{
+    display: none;
+}
+
+.intro img{
+    height: 100;
+}
+
+
+/* ---------UNIQUE SECTION---------- */
+
+.unique{
+    margin: 230px 155px 0;
+    color: hsl(256, 26%, 20%);
+
+}
+
+
+
+.unique .flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.unique img{
+    width: 50px;
+}
+
+.unique p{
+    line-height: 1.5;
+    font-size: 15px;
+    padding-right: 32px;
+    color:  hsl(273, 4%, 51%);
+
+}
+
+/* ------------ABOUT SECTION-------- */
+
+.about{
+    background-image: url(images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 530px;
+
+    display: flex;
+    margin: 100px 155px;
+    justify-content: space-between;
+    background-color: hsl(256, 26%, 20%);
+    padding: 50px 100px;
+    color: hsl(0, 0%, 98%);
+}
+
+.about button{
+    margin-top: 80px;
+}
+
+.about h1{
+    margin: 0;
+    width: 57%;
+}
+
+/* ---------FOOTER SECTION--------- */
+
+footer{
+    background-color:  hsl(0, 0%, 98%);
+    font-size: 12px;
+    padding-bottom: 50px;
+    background-image: url(images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 460px;
+
+}
+
+footer .container{
+    display: block;
+    margin: 0px 155px;
+    padding-top: 10px;
+}
+
+footer .flex-container-1{
+    margin: 35px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .flex-container-1 .icons img{
+    margin: 0 7px;
+}
+
+footer .flex-container-1 .icons img:hover{
+    cursor: pointer;
+}
+
+
+footer hr{
+    width: 100%;
+}
+
+footer .flex-container-2{
+    display: flex;
+    margin-top: 25px ;
+}
+
+footer .flex-item{
+    margin-right: 200px;
+}
+
+footer .flex-item li{
+    list-style-type: none;
+    padding: 8px 0;
+}
+
+footer .flex-item p{
+    color:  hsl(273, 4%, 51%);
+    margin-bottom: 30px;
+}
+
+footer .flex-item li a{
+    color:  hsl(256, 26%, 20%);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer .flex-item li a:hover{
+    text-decoration: underline;
+}
+
+
+@media(max-width:440px){
+
+    h1{
+        font-size: 40PX;
+    }
+
+    /* ---------HEADER SECTION---------- */
+    header{
+        margin: 20px;
+        padding: 0 ;
+        display: flex;
+        justify-content: space-between;
+        color:  hsl(273, 4%, 51%);
+    }
+    
+    .logo img{
+        margin: 10px 0 ;
+    }
+    
+    nav ul{
+        display: none;
+    }
+
+    nav .hamburger{
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* -----------INTRO SECTION------------- */
+    
+    .intro .content{
+        flex-direction: column;
+        margin:  0;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    .intro hr{
+        display: none;
+    }
+
+    .intro .body{
+        order: 2;
+    }
+    
+    .intro .bg{
+        display: none;
+    }
+
+    .intro .mobile-bg{
+        display: block;
+        position: absolute;
+    }
+
+    .intro .mobile-bg.left{
+        top: 520px;
+    }
+
+    .intro .mobile-bg.right{
+        width: 130px;
+        top: 830px;
+    }
+    
+    .intro .item{
+        width: auto;
+    }
+    
+    .intro h1{
+        margin: 80px 0 25px;
+        padding: 0 30px;
+    }
+
+    .intro p{
+        width: 80%;
+        margin: auto;
+    }
+
+    .intro .image{
+        position: relative;
+        height: auto;
+    
+    }
+
+    
+    .intro .image .desktop{
+        display: none;
+    }
+
+    .intro .image .mobile{
+        display: block;
+    }
+    
+    .intro img{
+        height: auto;
+        width: 100%;
+    }
+
+    
+    /* ---------UNIQUE SECTION---------- */
+    .unique{
+        text-align: center;
+        width: 80%;
+        margin: 130px  auto;
+    }
+
+    .unique .item{
+        margin: 50px 0;
+    }
+    
+    .unique h1{
+        margin-bottom: 70px;
+    }
+    
+    .unique .flex-container{
+        display: block;
+        justify-content: auto;
+    }
+    
+    .unique img{
+        width: 70px;
+    }
+    
+    .unique p{
+        font-size: 15px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+
+    /* ------------ABOUT SECTION-------- */
+    .about{
+        background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 213px;
+        display: block;
+        width: 80%;
+        margin: auto;
+        padding: 70px 20px;
+        text-align: center;
+    }
+    
+    
+    .about h1{
+        margin: 0;
+        width: auto;
+    }
+
+
+    /* ---------FOOTER SECTION--------- */
+    footer{
+        padding-bottom: 70px;
+        background-image: url(images/bg-pattern-footer-mobile.svg);
+        background-size: 390px;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 3px;
+    
+    }
+
+    footer .container{
+        margin: auto;
+        padding-top: 50px;
+        width: 85%;
+        margin: auto;
+    }
+
+    footer .flex-container-1{
+        display: block;
+    }
+
+    footer .flex-container-1 .icons img{
+        margin: 30px 7px 0;
+    }
+
+    footer .flex-container-2{
+        display: block;
+        margin-top: 25px ;
+    }
+    
+    footer .flex-item{
+        margin-right: auto;
+    }
+
+    footer .flex-item p{
+        margin: 40px 0;
+    }
+
+    footer .flex-item li{
+        padding: 15px 0;
+    }
+}
